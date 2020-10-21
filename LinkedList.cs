@@ -4,7 +4,41 @@ using System.Text;
 
 namespace LinkedListAssignment
 {
-    class LinkedList
+    public class LinkedList
     {
+        internal Node head;
+
+        internal void Add(int data)
+        {
+            Node node = new Node(data);
+            if (this.head == null)
+                this.head = node;
+
+            else
+            {
+                Node temp = head;
+                while (temp.next != null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = node;
+            }
+        }
+        public void Display()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linked list is empty");
+            }
+            else
+            {
+                Node temp = head;
+                while (temp != null)
+                {
+                    Console.Write(temp.data + "\n");
+                    temp = temp.next;
+                }
+            }
+        }
     }
 }
