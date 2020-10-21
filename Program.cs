@@ -26,12 +26,15 @@ namespace LinkedListAssignment
             //linklist.Display();
 
             ////UC4-Insert
-            linklist.Add(56);
-            linklist.Add(70);
-            linklist.Display();
-            linklist.Insert(2, 30);
-            linklist.Display();
+            //linklist.Add(56);
+            //linklist.Add(70);
+            //linklist.Display();
+            //linklist.Insert(2, 30);
+            //linklist.Display();
 
+            ////UC4-remove-first
+            linklist.removetFirst();
+            linklist.Display();
         }
     }
 }
