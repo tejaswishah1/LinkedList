@@ -85,6 +85,37 @@ namespace LinkedListAssignment
             }
             return head;
         }
+        public void removetFirst()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("List is  empty");
+            }
+            else
+            {
+                Console.WriteLine(head.data + " is removed from the list");
+                head = head.next;
+            }
+        }
+        public void removeAtLast()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("List is  empty");
+            }
+            else
+            {
+                Node temp = head;
+                Node prev = null; ;
+                while (temp.next != null)
+                {
+                    prev = temp;
+                    temp = temp.next;
+                }
+                Console.WriteLine(temp.data + " is removed from the list");
+                prev.next = null;
+            }
+        }
         public void Display()
         {
             if (head == null)

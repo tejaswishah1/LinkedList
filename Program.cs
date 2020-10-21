@@ -9,9 +9,9 @@ namespace LinkedListAssignment
             Console.WriteLine("Linked List");
 
             LinkedList linklist = new LinkedList();
-            //linklist.Add(56);
-            //linklist.Add(30);
-            //linklist.Add(70);
+            linklist.Add(56);
+            linklist.Add(30);
+            linklist.Add(70);
 
 
             ////UC2-Add-at-first:
@@ -33,7 +33,11 @@ namespace LinkedListAssignment
             //linklist.Display();
 
             ////UC4-remove-first
-            linklist.removetFirst();
+            //linklist.removetFirst();
+            //linklist.Display();
+
+            //UC5-Remove last
+            linklist.removeAtLast();
             linklist.Display();
         }
     }
